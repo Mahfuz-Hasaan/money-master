@@ -19,22 +19,22 @@
                 <img class="calc-img" src="imgaes/money.jpg" alt="">
             </div>
             <div class="income-list bg-slate-100 text-center flex flex-col justify-evenly">
-                <div class="income">
+                <div class="income" >
                     <p class="text-3xl font-semibold">Income</p><br>
-                    <span class="pr-5">Income: </span><input type="text" name="" id="">
+                    <span class="pr-5" >Income: </span><input type="text" id="income-field" name="" id="">
                 </div>
                 <div class="expense ">
                     <p class="text-3xl font-semibold">Expense</p><br>
-                    <span class="">Food:  </span><input class="" type="text" name="" id=""><br><br>
-                    <span>Rent:</span>  <input type="text" name="" id=""><br><br>
-                    <span>Clothes:</span>  <input type="text" name="" id="">
+                    <span class="">Food:  </span><input  type="text" name="" id="food-field"><br><br>
+                    <span>Rent:</span>  <input type="text" name="" id="rent-field"><br><br>
+                    <span>Clothes:</span>  <input type="text" name="" id="cloth-field">
                 </div>
                 <div class="btn">
-                    <input class="text-2xl font-semibold text-white bg-blue-800 px-4 py-2 rounded-md hover:bg-blue-500 cursor-pointer" type="button" value="Calculate">
+                    <input class="text-2xl font-semibold text-white bg-blue-800 px-4 py-2 rounded-md hover:bg-blue-500 cursor-pointer" type="button" id="calculate" value="Calculate">
                 </div>
                 <div class="xpns-blnc">
-                    <p class="text-3xl font-semibold">Total Expenses: 0</p>
-                    <p class="text-3xl font-semibold">Balance: 0</p>
+                    <p class="text-3xl font-semibold">Total Expenses: <span id="total-expense-field">0</span></p>
+                    <p class="text-3xl font-semibold">Balance: <span id="balance-field">0</span></p>
                 </div>
                 <div class="saving-calculation flex justify-center gap-3 items-center">
                     <span>Save:</span>
@@ -42,10 +42,11 @@
                 </div>
                 <div class="saving-remianing-blnc">
                     <p class="text-3xl font-semibold"">Saving Amount: 0</p>
-                    <p class="text-3xl font-semibold"">Remaining Balance: 0</p>
+                    <p class="text-3xl font-semibold"">Remaining Balance: <span >0</span></p>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
