@@ -1,14 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>money master</title>
-</head>
-<body>
-  <header>
-    <p class="text-6xl font-bold text-center my-10 bg-">Money Master</p>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>money master</title>
+  </head>
+  <body>
+    <header>
+      <p class="text-6xl font-bold text-center my-10 text-violet-900">
+        Money Master
+      </p>
+    </header>
+    <main">
+        <section class="body w-11/12 grid grid-cols-2 mx-auto">
+            <div class="img">
+                <img class="calc-img" src="imgaes/money.jpg" alt="">
+            </div>
+            <div class="income-list bg-slate-100 text-center flex flex-col justify-evenly">
+                <div class="income">
+                    <p class="text-3xl font-semibold">Income</p><br>
+                    <span class="pr-5">Income: </span><input type="text" name="" id="">
+                </div>
+                <div class="expense ">
+                    <p class="text-3xl font-semibold">Expense</p><br>
+                    <span class="">Food:  </span><input class="" type="text" name="" id=""><br><br>
+                    <span>Rent:</span>  <input type="text" name="" id=""><br><br>
+                    <span>Clothes:</span>  <input type="text" name="" id="">
+                </div>
+                <div class="btn">
+                    <input class="text-2xl font-semibold text-white bg-blue-800 px-4 py-2 rounded-md hover:bg-blue-500 cursor-pointer" type="button" value="Calculate">
+                </div>
+                <div class="xpns-blnc">
+                    <p class="text-3xl font-semibold">Total Expenses: 0</p>
+                    <p class="text-3xl font-semibold">Balance: 0</p>
+                </div>
+                <div class="saving-calculation flex justify-center gap-3 items-center">
+                    <span>Save:</span>
+                    <input  type="text">  <span> % </span> <input class="text-2xl font-semibold text-white bg-blue-800 px-4 py-2 rounded-md hover:bg-blue-500 cursor-pointer" type="button" value="Save">
+                </div>
+                <div class="saving-remianing-blnc">
+                    <p class="text-3xl font-semibold"">Saving Amount: 0</p>
+                    <p class="text-3xl font-semibold"">Remaining Balance: 0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+  </body>
 </html>
